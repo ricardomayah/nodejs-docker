@@ -10,7 +10,7 @@ services:
         links: 
             - mongo
         volumes:
-            - .:/usr/src/app1  #Modifica los archivos en el docker compose
+            - ./src:/usr/src/app1/src  #Modifica los archivos en el docker compose
     mongo:
         container_name: mymongodatabase
         image: mongo
